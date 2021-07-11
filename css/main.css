@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #e7e7eb;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-sec {
+  background: #1e213a;
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left .header .myLocation {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.left .header .myLocation img {
+  width: 20px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.left .header .search-bar button {
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.left .bg img {
+  width: 120%;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  opacity: 0.1;
+}
+
+.left .main-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 18%;
+}
+
+.left .info .main-icon img {
+  width: 40%;
+}
+
+.left .info .main-degree {
+  position: relative;
+  text-align: center;
+  top: 20%;
+}
+
+.left .info .degree {
+  font-size: 85px;
+  font-weight: 500;
+  line-height: 169px;
+}
+
+.left .info .degree-icon {
+  position: absolute;
+  top: 55%;
+  font-size: 40px;
+  color: #a09fb1;
+}
+
+.left .info .forecast-text {
+  font-weight: 600;
+  font-size: 24px;
+  color: #a09fb1;
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+.left .info .today-date,
+.left .info .location {
+  color: #88869d;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+.left .info .location {
+  margin-top: 20px;
+}
+
+.left .info .location i {
+  margin-right: 5px;
+}
+
+.search {
+  background: #1e213a;
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  z-index: 100;
+  visibility: visible;
+  transition: all 0.7s ease-in-out;
+}
+
+.show {
+  left: 0;
+  visibility: visible;
+}
+
+.search .header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search button {
+  background: #3c47e9;
+  width: 60px;
+}
+
+.search .close-btn i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search .input {
+  border: 1px solid #e7e7eb;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-right: 10px;
+  padding-left: 8px;
+}
+
+.search .input input {
+  background: transparent;
+  border: none;
+  color: #e7e7eb;
+  padding: 8px;
+  width: 100%;
+}
+
+.search .input input:focus {
+  outline: none;
+}
+
+.search .input input::placeholder {
+  color: #616475;
+}
+
+.search .input i {
+  color: #616475;
+}
+
+.cities {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.city {
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s all ease;
+}
+
+.city i {
+  color: #616475;
+  font-size: 12px;
+  display: none;
+}
+
+.city:hover {
+  border: 1px solid #616475;
+}
+
+.city:hover i {
+  display: block;
+}
+
+.right-sec {
+  background: #100e1d;
+  height: 100vh;
+  width: 100vw;
+}
+
+.right-container {
+  padding-top: 20px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.c-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c,
+.f {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #585676;
+}
+
+.active {
+  color: #100e1d !important;
+  background: #e7e7eb !important;
+}
+
+.c,
+.f span {
+  font-weight: 800;
+}
+
+.five-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.forecast {
+  background: #1e213a;
+  padding: 15px;
+}
+
+.forecast-day {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.forecast-icon {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.forecast-icon img {
+  width: 40px;
+}
+
+.min-max {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.min {
+  color: #a09fb1;
+  margin-left: 8px;
+}
+
+.highlight {
+  margin-top: 5px;
+}
+
+.wind-humid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wind {
+  background: #1e213a;
+  padding: 20px;
+  width: 50%;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.wind h4 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.wind-value {
+  font-size: 55px !important;
+  font-weight: 800 !important;
+}
+
+.wind span {
+  font-size: 25px;
+}
+
+.wind-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wind-icon {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: rotate(-180deg);
+  font-size: 16px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.wsw {
+  font-size: 12px;
+}
+
+.humidity {
+  background: #1e213a;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.humidity h4 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.humidity span {
+  font-size: 30px;
+}
+
+.humid-value {
+  font-size: 55px !important;
+  font-weight: 800 !important;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+#myBar {
+  width: 84%;
+  height: 10px;
+  background: #ffec65;
+  border-radius: 4px;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.progress-text span {
+  font-size: 12px;
+  color: #a09fb1;
+  font-weight: 500;
+}
+
+.percent {
+  margin-top: 3px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.percent-icon {
+  font-size: 12px;
+  color: #a09fb1;
+  font-weight: 500;
+}
+
+.visibility-air {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visibility,
+.air-pressure {
+  width: 50%;
+  background: #1e213a;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.visibility {
+  margin-right: 40px;
+}
+
+.visibility h4,
+.air-pressure h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.vis-value,
+.pressure-value {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.pressure,
+.miles {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .right-container {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .right-container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-sec {
+    width: 100%;
+    height: 100%;
+  }
+  .right-sec {
+    height: 100%;
+  }
+  .right-container {
+    width: 100%;
+    padding: 30px;
+  }
+  .five-forecast {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .forecast-icon {
+    margin: 15px 0;
+  }
+  .forecast-icon img {
+    width: 60px;
+  }
+  .forecast {
+    margin: 10px;
+    padding: 20px;
+    width: 110px;
+  }
+  .wind-humid,
+  .visibility-air {
+    flex-direction: column;
+  }
+  .wind,
+  .humidity,
+  .visibility,
+  .air-pressure {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .wind-icon {
+    font-size: 12px;
+  }
+  .direction {
+    font-size: 12px;
+  }
+  .left .info .main-icon {
+    top: 24%;
+  }
+  .left .info .main-degree {
+    top: 25%;
+  }
+  .left .info .main-icon img {
+    width: 140px;
+  }
+  .left .info .forecast-text {
+    font-size: 34px;
+    top: 25%;
+  }
+  .left .info .today-date,
+  .left .info .location {
+    font-size: 16px;
+  }
+  .left .info .degree {
+    font-size: 110px;
+  }
+  .left .bg img {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width:465px) {
+  .left .bg img {
+    width: 120%;
+    left: -10%;
+  }
+  .left-sec {
+    height: 100vh;
+  }
+}

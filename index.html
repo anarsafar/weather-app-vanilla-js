@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./images/favicon.ico" sizes="64x64">
+</head>
+
+<body>
+    <main>
+        <section class="left-sec">
+            <section class="search">
+                <div class="header">
+                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="container">
+                    <form>
+                        <div class="input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" autocomplete="off" placeholder="search location" id="searchBox">
+                        </div>
+                        <button id="submit-btn">Search</button>
+                    </form>
+                    <div class="cities"></div>
+                </div>
+            </section>
+            <section class="left">
+                <div class="bg"><img src="./images/Cloud-background.png" alt=""></div>
+                <div class="header">
+                    <div class="search-bar">
+                        <button id="searchBtn">Search for places</button>
+                    </div>
+                    <button class="myLocation"><img src="./images/my_location_white_24dp.svg" alt=""></button>
+                </div>
+                <div class="info">
+                    <div class="main-icon"><img src="./images/Shower.png" alt="" id="weather-icon"></div>
+                    <div class="main-degree">
+                        <span class="degree">15</span>
+                        <span class="degree-icon">&deg;C</span>
+                    </div>
+                    <div class="forecast-text">Shower</div>
+                    <div class="today-date">Today - <span class="date">Wed, 7 Jun</span></div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="locationName">Location name</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="right-sec">
+            <div class="right-container">
+                <div class="right-header">
+                    <div class="c-f">
+                        <div class="c active"><span>&deg;C</span></div>
+                        <div class="f"><span>&deg;F</span></div>
+                    </div>
+                </div>
+                <div class="five-forecast">
+                    <div class="forecast">
+                        <div class="forecast-day">Tomorrow</div>
+                        <div class="forecast-icon">
+                            <img src="./images/HeavyRain.png" alt="" class="icon">
+                        </div>
+                        <div class="min-max">
+                            <div class="max">
+                                <span class="max-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                            <div class="min">
+                                <span class="min-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast-day">Tomorrow</div>
+                        <div class="forecast-icon">
+                            <img src="./images/HeavyRain.png" alt="" class="icon">
+                        </div>
+                        <div class="min-max">
+                            <div class="max">
+                                <span class="max-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                            <div class="min">
+                                <span class="min-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast-day">Tomorrow</div>
+                        <div class="forecast-icon">
+                            <img src="./images/HeavyRain.png" alt="" class="icon">
+                        </div>
+                        <div class="min-max">
+                            <div class="max">
+                                <span class="max-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                            <div class="min">
+                                <span class="min-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast-day">Tomorrow</div>
+                        <div class="forecast-icon">
+                            <img src="./images/HeavyRain.png" alt="" class="icon">
+                        </div>
+                        <div class="min-max">
+                            <div class="max">
+                                <span class="max-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                            <div class="min">
+                                <span class="min-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast-day">Tomorrow</div>
+                        <div class="forecast-icon">
+                            <img src="./images/HeavyRain.png" alt="" class="icon">
+                        </div>
+                        <div class="min-max">
+                            <div class="max">
+                                <span class="max-value">16</span>
+                                <span class="degree-icon">&deg;C </span>
+                            </div>
+                            <div class="min">
+                                <span class="min-value">16</span>
+                                <span class="degree-icon">&deg;C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="highlight">
+                    <h4>Today’s Highlights</h4>
+                    <div class="highlight-container">
+                        <div class="wind-humid">
+                            <div class="wind">
+                                <h4>Wind status</h4>
+                                <div>
+                                    <span class="wind-value">7</span>
+                                    <span>mph</span>
+                                </div>
+                                <div>
+                                    <div class="wind-footer">
+                                        <div class="wind-icon">
+                                            <i class="fas fa-location-arrow"></i>
+                                        </div>
+                                        <div class="direction">WSW</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="humidity">
+                                <h4>Humidity</h4>
+                                <div>
+                                    <span class="humid-value">84</span><span>%</span>
+                                </div>
+                                <div class="progressbar-container">
+                                    <div class="progress-text">
+                                        <span>0</span>
+                                        <span>50</span>
+                                        <span>100</span>
+                                    </div>
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+                                    </div>
+                                    <div class="percent">
+                                        <div class="percent-icon">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visibility-air">
+                            <div class="visibility">
+                                <h4>Visibility</h4>
+                                <div class="visibility-text">
+                                    <span class="vis-value">6,4</span>
+                                    <span class="miles">miles</span>
+                                </div>
+                            </div>
+                            <div class="air-pressure">
+                                <h4>Air pressure</h4>
+                                <div class="pressure-text">
+                                    <span class="pressure-value">998</span>
+                                    <span class="pressure">mb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="https://kit.fontawesome.com/01eab78c02.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
