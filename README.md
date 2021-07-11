@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://weather-app-anarseferov.vercel.app/">
       Live Demo
     </a>
     <span> | </span>
@@ -27,12 +27,13 @@
 
 Weather app build with vanilla JavaScript using Meta Weather API. In this project I learned how to convert temperature in Celcius to Fahrenheit, writing progress bar, using Gelocation API by google (for getting current location of user), how to add favicon to HTML file, getting different date of day using Date object, using async await structure with fetch API and so on. 
 
-- You can check live demo here
+- You can check live demo [here](https://weather-app-anarseferov.vercel.app/)
 
 ### Built With
 
 - HTML
 - pure CSS
+- Flexbox
 - JavaScript
 - Meta Weather API
 - AJAX, async await
