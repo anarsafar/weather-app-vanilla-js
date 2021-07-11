@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](C:\Users\Anar\Downloads\Challanges\weather-app\images\desktop-screenshot.png)
+![screenshot](./images/desktop-screenshot.png)
 
 Weather app build with vanilla JavaScript using Meta Weather API. In this project I learned how to convert temperature in Celcius to Fahrenheit, writing progress bar, using Gelocation API by google (for getting current location of user), how to add favicon to HTML file, getting different date of day using Date object, using async await structure with fetch API and so on. 
 
