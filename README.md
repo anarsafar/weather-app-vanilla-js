@@ -28,6 +28,7 @@
 Weather app build with vanilla JavaScript using Meta Weather API. In this project I learned how to convert temperature in Celcius to Fahrenheit, writing progress bar, using Gelocation API by google (for getting current location of user), how to add favicon to HTML file, getting different date of day using Date object, using async await structure with fetch API and so on. 
 
 - You can check live demo [here](https://weather-app-anarseferov.vercel.app/)
+- **⚠️ Warning** For avoiding CORS ERROR you can use [cors-anywhere](https://cors-anywhere.herokuapp.com/) to help with accessing data from other websites that are normally forbidden by the same-origin policy of web browsers or you can download extension [allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?utm_source=chrome-ntp-icon) and toggle "on" on extension tab.
 
 ### Built With
 
