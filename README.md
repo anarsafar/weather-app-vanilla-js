@@ -1,4 +1,4 @@
-<h1 align="center">{Weather App}</h1>
+<h1 align="center">Weather App</h1>
 
 <div align="center">
   <h3>
@@ -64,4 +64,4 @@ To clone and run this application, you'll need [Git](https://git-scm.com). That 
 
 ## Contact
 
-- GitHub [@anarseferrov](https://{github.com/anarseferrov})
+- GitHub [@anarseferrov](https://{github.com/ianarseferov})
